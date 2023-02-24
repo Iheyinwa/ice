@@ -1,10 +1,12 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
 
 export default function MyApp() {
 	return (
 		<div>
-			<Button variant="contained">Hello World</Button>
+      <Navbar />
+      <Hero />
 		</div>
 	);
 }
