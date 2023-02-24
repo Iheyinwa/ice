@@ -29,7 +29,7 @@ export default function Navbar() {
   // };
   return (
     <Box sx={{
-      flexGrow: 1, border: 'rgba(17, 17, 17, 0.5);', boxShadow: 3, borderRadius: '16px',mx:15,mt:3, backdropFilter: 'blur(41)'}}>
+      flexGrow: 1, border: 'rgba(17, 17, 17, 0.5);', boxShadow: 3, borderRadius: '16px',mx:15,mt:3, backdropFilter: 'blur(41)',minWidth:'70%'}}>
       <AppBar position='static' sx={{ bgcolor: 'rgba(17, 17, 17, 0.5);', boxShadow: 3, borderRadius: '16px', backdropFilter: 'blur(41)' }}>
         <Toolbar>
           <IconButton sx={{p:0}}>
