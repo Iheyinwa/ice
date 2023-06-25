@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./components/Content";
+import SideBar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-between font-poppins">
+      <section className="w-full lg:w-1/5 bg-[#111418] fixed z-10 font-poppins">
+        <SideBar />
+      </section>
+      <section className="lg:ml-[20%] lg:w-4/5">
+        <Content />
+      </section>
     </div>
   );
 }
