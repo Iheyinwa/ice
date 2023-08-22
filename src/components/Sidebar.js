@@ -1,8 +1,15 @@
+import { useState } from 'react'
 import ice from '../img/ice-image.jpg'
 import Navigation from './Navigation'
 import {FaBars, FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa'
+import NavigationMenu from './NavigationMenu'
 
 export default function SideBar(){
+const [menu, setMenu] = useState(false);
+
+  const openMenu=()=>{
+    setMenu(!menu)
+  }
   return(
     <aside className='flex justify-between items-center lg:block p-4'>
       <div className='hidden lg:block'>
@@ -21,8 +28,9 @@ export default function SideBar(){
         <li><FaGithub size={20} className='text-white hover:text-[#dc3435] hover:cursor-pointer' /></li>
         <li><FaLinkedinIn size={20} className='text-white hover:text-[#dc3435] hover:cursor-pointer' /></li>
         <li><FaTwitter size={20} className='text-white hover:text-[#dc3435] hover:cursor-pointer' /></li>
-      <FaBars size={20} className='lg:hidden hover:cursor-pointer text-white' />
+      <FaBars size={20} className='lg:hidden hover:cursor-pointer text-white' onclick={openMenu} />
       </ul>
+      {menu && <NavigationMenu />}
       
     </aside>
   )

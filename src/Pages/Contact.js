@@ -41,7 +41,7 @@ export default function Contact(){
           </div>
         </div>
 
-        <div className="md:w-[40%] text-[#909294] text-center md:text-justify">
+        <div className="md:w-[40%] text-[#909294] flex flex-col justify-center items-center  md:text-justify">
           <h2 className="font-semibold text-lg text-white font-poppins">ADDRESS</h2>
           <div className="flex items-center gap-2 mt-4">
           <FaMapMarker color="#dc3435" size={20} />

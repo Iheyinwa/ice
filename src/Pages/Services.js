@@ -1,6 +1,6 @@
 import NavigationText from "../components/NavigationText";
 import ServiceTag from "../components/ServiceTag";
-import { IoDesktopOutline } from "react-icons/io5";
+import { IoDesktopOutline, IoPeopleOutline, IoPhonePortraitOutline, IoTrendingUpSharp } from "react-icons/io5";
 
 export default function Services(){
   return(
@@ -13,21 +13,25 @@ export default function Services(){
           children={
           <IoDesktopOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
           }
+          service='Web Design Implementation'
         />
         <ServiceTag 
           children={
-          <IoDesktopOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
+          <IoPhonePortraitOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
           }
+          service='Responsive Design and Cross-Browser Compatibility'
         />
         <ServiceTag 
           children={
-          <IoDesktopOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
+          <IoPeopleOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
           }
+          service='User Interaction and Experience'
         />
         <ServiceTag
         children={
-          <IoDesktopOutline color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
+          <IoTrendingUpSharp color='#dc3435' size={40} className="border border-[rgb(17,20,24)] shadow-lg p-4 rounded-lg bg-[#111418] w-[70px] h-[70px]" />
           }
+          service='Performance Optimization'
          />
       </section>
     </section>

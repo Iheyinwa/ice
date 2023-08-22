@@ -4,24 +4,30 @@ import work2 from '../img/ice-image.jpg'
 
 export default function Portfolio(){
   return(
-     <section className='bg-[#343A40]'>
+    <section className='bg-[#343A40]'>
       <NavigationText
       text='PORTFOLIO'
       title='My Work' />
-      <section className="grid grid-cols-3 grid-rows-2 gap-3 justify-between mx-12 pb-12">
-        <img src={work} alt='Anonime' className="border border-[#343a40] rounded-lg " />
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] justify-around mx-12 pb-12">
+      <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
+        <img src={work2} alt='Anonime' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
+        </div>
       
-        <img src={work2} alt='Rhinospine' className="border border-[#343a40] rounded-lg row-span-2" />
+        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
+        <img src={work} alt='Rhinospine' height='500px' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
+        </div>
+    
+        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4 lg:col-span-2">
+        <img src={work} alt='Ice' className="border border-[#343a40] rounded-lg object-cover w-full h-full " />
+        </div>
       
-      
-        <img src={work} alt='Ice' className="border border-[#343a40] rounded-lg" />
-      
-        {/* <div>
-          <img src={work2} alt='ABCD' className="border border-[#343a40] rounded-lg" />
-        </div> */}
-        <img src={work} alt='Cactus' className="border border-[#343a40] rounded-lg" />
+        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
+        <img src={work2} alt='Cactus' className="border border-[#343a40] rounded-lg object-cover w-full h-full " />
+        </div>
         
-        <img src={work} alt='Black and White' className="border border-[#343a40] rounded-lg" />
+        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
+        <img src={work2} alt='Black and White' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
+        </div>
 
       </section>
     </section>
