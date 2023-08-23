@@ -8,24 +8,24 @@ export default function Portfolio(){
       <NavigationText
       text='PORTFOLIO'
       title='My Work' />
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] justify-around mx-12 pb-12">
-      <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
-        <img src={work2} alt='Anonime' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[10px] justify-around mx-12 pb-12">
+      <div className="border border-[#343a40] rounded-lg w-full h-[300px]">
+        <img src={work2} alt='Anonime' className="border border-[#343a40] rounded-lg w-full h-full object-cover" />
         </div>
       
-        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
-        <img src={work} alt='Rhinospine' height='500px' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
+        <div className="border border-[#343a40] rounded-lg w-full h-[300px]">
+        <img src={work} alt='Rhinospine' className="border border-[#343a40] rounded-lg w-full h-full object-cover" />
         </div>
     
-        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4 lg:col-span-2">
-        <img src={work} alt='Ice' className="border border-[#343a40] rounded-lg object-cover w-full h-full " />
+        <div className="border border-[#343a40] rounded-lg w-full h-[300px] md:col-span-2 lg:col-span-1">
+        <img src={work} alt='Ice' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
         </div>
       
-        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
-        <img src={work2} alt='Cactus' className="border border-[#343a40] rounded-lg object-cover w-full h-full " />
+        <div className="border border-[#343a40] rounded-lg w-full h-[300px] lg:col-span-2">
+        <img src={work2} alt='Cactus' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
         </div>
         
-        <div className="border border-[#343a40] rounded-lg w-full h-[500px] p-4">
+        <div className="border border-[#343a40] rounded-lg w-full h-[300px]">
         <img src={work2} alt='Black and White' className="border border-[#343a40] rounded-lg object-cover w-full h-full" />
         </div>
 

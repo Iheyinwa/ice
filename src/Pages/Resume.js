@@ -8,7 +8,7 @@ export default function Resume(){
       <NavigationText
       text='SUMMARY'
       title='Resume' />
-      <section className="grid grid-cols-2 gap-8 mx-12 my-12 text-white">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-12 my-12 text-white">
         <div>
           <h3 className="font-bold text-2xl">My Education</h3>
           <ResumeCard
