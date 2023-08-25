@@ -3,7 +3,7 @@ import NavigationText from "../components/NavigationText";
 
 export default function About(){
   return(
-    <section>
+    <section id="about">
     <NavigationText
     text= 'ABOUT ME'
     title= 'Know Me More' />

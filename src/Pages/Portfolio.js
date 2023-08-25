@@ -4,7 +4,7 @@ import work2 from '../img/ice-image.jpg'
 
 export default function Portfolio(){
   return(
-    <section className='bg-[#343A40]'>
+    <section className='bg-[#343A40]' id="portfolio">
       <NavigationText
       text='PORTFOLIO'
       title='My Work' />

@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 export default function Contact(){
   return(
-    <section>
+    <section id='contact'>
       <NavigationText
       text='CONTACT'
       title='Get In Touch' />

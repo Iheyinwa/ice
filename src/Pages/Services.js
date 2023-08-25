@@ -4,7 +4,7 @@ import { IoDesktopOutline, IoPeopleOutline, IoPhonePortraitOutline, IoTrendingUp
 
 export default function Services(){
   return(
-    <section className='bg-[#343A40]'>
+    <section className='bg-[#343A40]' id='whatido'>
       <NavigationText
       text='SERVICES'
       title='What I Do?' />
