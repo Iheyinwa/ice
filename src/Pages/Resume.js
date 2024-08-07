@@ -1,85 +1,57 @@
-import Button from "../components/Button";
-import {CSS, HTML5, JS, NEXTJS, REACTJS, TAILWINDCSS }from "../components/Icons";
 import NavigationText from "../components/NavigationText";
-import ResumeCard from "../components/ResumeCard";
-import SkillsCard from "../components/SkillsCard";
+import cactus from "../img/cactus.png";
+import anonime from "../img/anonime.png";
 
-export default function Resume(){
-  return(
-    <section id="resume">
-      <NavigationText
-      text='SUMMARY'
-      title='Resume' />
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-12 my-12 text-white">
-        <div>
-          <h3 className="font-bold text-2xl">My Education</h3>
-          <ResumeCard
-          course='Computer Engineering'
-          role='Enugu State University of Science and Technology'
-          description='Lisque persius interesset his et, 
-          in quot quidam persequeris vim, ad mea essent possim iriure.' />
-          <ResumeCard
-          course='Computer Engineering'
-          role='Enugu State University of Science and Technology'
-          description='Lisque persius interesset his et, 
-          in quot quidam persequeris vim, ad mea essent possim iriure.' />
-        </div>
-        <div>
-          <h3 className="font-bold text-2xl">My Experience</h3>
-          <ResumeCard
-          course='Computer Engineering'
-          role='Enugu State University of Science and Technology'
-          description='Lisque persius interesset his et, 
-          in quot quidam persequeris vim, ad mea essent possim iriure.' />
-          <ResumeCard
-          course='Computer Engineering'
-          role='Enugu State University of Science and Technology'
-          description='Lisque persius interesset his et, 
-          in quot quidam persequeris vim, ad mea essent possim iriure.' />
+export default function Resume() {
+  return (
+    <section id="portfolio">
+      <NavigationText text="PORTFOLIO" title="My Work" />
+
+      <div className="lg:ml-[20%] mx-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-[10px] justify-around pb-12 items-center h-full">
+          <div className="bg-[#111418] border-[#111418] rounded-lg p-[20px] h-full">
+            <p className="rounded bg-[#dc3545] text-white w-fit px-2 my-4">
+              2000-2004
+            </p>
+            <p className="my-4">Cactus</p>
+            <p className="text-[#dc3545] my-4">Cactus is an Insurance company that helps Nigerians to save for the rainy days.</p>
+            <p className="text-[#909294]">Stack: REACTJS || TAILWINDCSS</p>
+          </div>
+        <div className="border border-[#343a40] rounded-lg w-full h-full">
+          <img
+            src={cactus}
+            alt="Cactus"
+            className="border border-[#343a40] rounded-lg w-full h-full object-contain"
+          />
         </div>
       </section>
-      <section className="m-12">
-        <h3 className="font-bold text-2xl text-white mb-4">My Skills</h3>
-      <div className="flex flex-wrap justify-between gap-2 mb-4">
-      <SkillsCard
-      children={
-        <HTML5 />
-      }
-      text='HTML5' />
 
-      <SkillsCard
-      children={
-        <CSS/>
-      }
-      text='CSS3' />
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-[10px] justify-around pb-12 ">
+        <div className="border border-[#343a40] rounded-lg w-full h-fit">
+          <img
+            src={anonime}
+            alt="anonime"
+            className="border border-[#343a40] rounded-lg object-contain w-full h-full"
+          />
+        </div>
+        <section>
+          <p>Another text for content purposes</p>
+        </section>
+      </section>
 
-      <SkillsCard
-      children={
-        <JS />
-      }
-      text='JavaScript' />
-
-      <SkillsCard
-      children={
-        <REACTJS />
-      }
-      text='React JS' />
-
-      <SkillsCard
-      children={
-        <TAILWINDCSS />
-      }
-      text='Tailwind CSS' />
-
-      <SkillsCard
-      children={
-       <NEXTJS />
-      }
-      text='Next JS' />
-
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-[10px] justify-around pb-12">
+        <section>
+          <p>Another text for content purposes</p>
+        </section>
+        <div className="border border-[#343a40] rounded-lg w-full h-fit">
+          <img
+            src={cactus}
+            alt="cactus"
+            className="border border-[#343a40] rounded-lg object-contain w-full h-fit"
+          />
+        </div>
+      </section>
       </div>
-        <Button text='Download CV' />
-      </section>
     </section>
-  )
+  );
 }

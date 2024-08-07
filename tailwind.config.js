@@ -15,7 +15,8 @@ module.exports = {
         'hero-pattern': "url('/src/img/ice-hero.jpg')",
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
+        'bricolage': ['Bricolage', 'sans-serif']
       },
     },
   },
